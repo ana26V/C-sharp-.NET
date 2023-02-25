@@ -98,7 +98,7 @@ namespace WindowsFormsApp2
 
             string words = NumberToWords((int)sbrut);
             string aux = textBox1.Text;
-            MessageBox.Show("Ati introdus " + words);
+            MessageBox.Show("Ati introdus salariu brut: " + words);
            
         }
 
