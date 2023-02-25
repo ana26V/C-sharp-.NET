@@ -65,12 +65,43 @@ namespace WindowsFormsApp2
             double sbrut = double.Parse(textBox1.Text);
             double CFS_angajat = (sbrut / 1000) * 5;
             label1.Text= CFS_angajat.ToString();
+
+        
+            double CAS_angajat = (sbrut / 1000) * 105;
+            label2.Text = CAS_angajat.ToString();
            
+            double CASS_angajat = (sbrut / 1000) * 55;
+            label3.Text = CASS_angajat.ToString();
+          
+            double Impozit_angajat = ((sbrut - CFS_angajat - CAS_angajat - CASS_angajat - 180) / 1000) * 160;
+            label4.Text = Impozit_angajat.ToString();
            
+            double CAS_angajator = (sbrut / 1000) * 208;
+            label5.Text = CAS_angajator.ToString();
+
+            double CFS_angajator = (sbrut / 1000) * 50;
+            label6.Text = CFS_angajator.ToString();
+          
+            double CFCI = (sbrut / 1000) * 85;
+            label7.Text = CFCI.ToString();
+          
+            double CFGPCS = (sbrut / 10000) * 25;
+            label8.Text = CFGPCS.ToString();
+           
+            double CASS_angajator = (sbrut / 1000) * 52;
+            label9.Text = CASS_angajator.ToString();        
+
+            double CFAMBP = (sbrut / 1000) * 4;
+            label10.Text = CFAMBP.ToString();
+
+
+
             string words = NumberToWords((int)sbrut);
             string aux = textBox1.Text;
             MessageBox.Show("Ati introdus " + words);
            
         }
+
+        
     }
 }
